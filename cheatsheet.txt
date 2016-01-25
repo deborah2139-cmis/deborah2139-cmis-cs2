@@ -1,3 +1,9 @@
 git add filename
 git commit -m "Added changes to filename"
 git push
+ls directory name : list contents of a direcotory
+cd : go home
+cd directory name : go into the directory
+cd .. : go up
+cat filename : view contents of a file
+gedit filename & : get the file and not erase
