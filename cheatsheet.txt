@@ -3,7 +3,41 @@ git commit -m "Added changes to filename"
 git push
 ls directory name : list contents of a direcotory
 cd : go home
-cd directory name : go into the directory
 cd .. : go up
 cat filename : view contents of a file
 gedit filename & : get the file and not erase
+python -m SimpleHTTPServer: starting a development server
+rm: remove
+rm *: remove everything
+rm *.txt: remove all txt files
+put: upload
+put *.txt: upload all txt files
+ls *: list everything
+!ls *.txt: list all txt files
+!ls: list files in sftp
+sftp deborah2139@cmis-hsteacher: going in to the teacher's computer
+cd public_html: go in to the file MUST DO THIS
+localhost:8000/thing.html:going into the thing inside the index.html file
+localhost:8000/l+l/: going into the thing in the folder that is inside the index.html file
+localhost:8000/ : production server
+rmdir list and links: remove
+mkdir list and links: make the directory
+cd listandlinks/: inside the public_html file
+<tr colspan="#">: expanding the collumn
+<tr rowspan="#">: expanding rows
+
+SFTP:
+- mkdir foldername : make folder in sftp
+- rmdir foldername : remove folder in sftp
+- cd foldername -> put filename : uploading file in the folder
+
+Final Project:
+- nav, main = side by side
+- nav = width:#px;
+- nav = float:left;
+- main = margin-left:#px;
+- float and margin should be the same (right-right & left-left)
+- img = float:right;
+- footer = clear:both; = not allow things to float to the right/left
+- br.clear = clear:both;
+- br class="clear"
