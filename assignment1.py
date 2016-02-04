@@ -29,6 +29,7 @@ DifferenceofmyHeightandtheAverageHeightofKoreanGirl = 1.62 - myHeight
 #It tells the difference of the average height of Korean girls and my height
 print DifferenceofmyHeightandtheAverageHeightofKoreanGirl
 AreaofSquare = LengthofSquare * LengthofSquare
+#It tells the area of the square
 print AreaofSquare
 HalfVolumeofCube = LengthofSquare * LengthofSquare * LengthofSquare / 2
 print HalfVolumeofCube
