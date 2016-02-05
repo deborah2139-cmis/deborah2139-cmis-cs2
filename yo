@@ -1,0 +1,20 @@
+def me_do(job):
+	print "I am a "+job+"."
+me_do("student")
+
+def diana_does(sport):
+	print "Diana "+sport+" like a mad woman."
+diana_does("runs crazily")
+
+def dog_do(motion1, motion2):
+	print "The dog "+motion1+"s like a rabbit."
+	print "The dog also "+motion2+"s the cat."
+dog_do("run", "chase")
+
+def we_do(job, action, motion):
+	print "We are "+job+"."
+	print "We always "+action+"."
+	print "We tend to "+motion+" without even knowing."
+we_do("students", "walk", "breathe")
+
+def feeling():
