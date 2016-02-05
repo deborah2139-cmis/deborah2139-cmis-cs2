@@ -32,10 +32,15 @@ AreaofSquare = LengthofSquare * LengthofSquare
 #It tells the area of the square
 print AreaofSquare
 HalfVolumeofCube = LengthofSquare * LengthofSquare * LengthofSquare / 2
+#It tells half of the volume of the cube
 print HalfVolumeofCube
 CalculationofRectangle = LengthofRectangle * HeightofRectangle * 1.1
+#It tells the answer for 1/9 the area of the rectangle
 print CalculationofRectangle
 print "Hello. My name is " + str(myName) + ". I am " + str(myAge) + " years old, which is about " + str(myAgeinMonth) + " months. I have about " + str(YearslefttoLive) + " more years left to live. My height is about " + str(myHeight) + " meters."
+#Tells things about my name, age, age in month, years left to live, and my height
 print "Hello. My name is", myName, ". I am", myAge, " years old, which is about",  myAgeinMonth, " months. I have about", YearslefttoLive, "more years left to live. My height is about", myHeight, "meters."
 WinkingFace = ";)"
+#Tells the same thing as the one above
 print WinkingFace * 10000
+#10000 winking faces
