@@ -17,7 +17,9 @@ def we_do(job, action, motion):
 	print "We tend to "+motion+" without even knowing."
 we_do("students", "walk", "breathe")
 
-def feeling():
+
+
+
 
 def add(x, y):
 	z = x + y
