@@ -2,14 +2,17 @@
 #1 1pt) What is the symbol "=" used for?
 #It is used to put a value into a variable.
 #
+#correct
 #
 #2 3pts) Write a technical definition for 'function'
 #Function is a named sequence of statements that performs a computation.
 #
+#correct
 #
 #3 1pt) What does the keyword "return" do?
 #The keyword "return" spits out the output if you put in the input.
 #
+#correct
 #
 #4 5pts) We know 5 basic data types. Write the name for each one and provide two
 #   examples of each below
@@ -18,7 +21,7 @@
 #	3:floating point - 3.4, -2324.23
 #	4:string - "Hellow"
 #	5:tuple - ("Hello", 8320)
-#
+#   4
 #5 2pts) What is the difference between a "function definition" and a 
 #        "function call"?
 #A function call is an expression containing a simple type name an a parenthesized argument list. A functioni definition specifies the name of new function and the sequence of statements that execute when the function is called.
