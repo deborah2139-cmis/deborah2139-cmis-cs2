@@ -26,11 +26,15 @@
 #        "function call"?
 #A function call is an expression containing a simple type name an a parenthesized argument list. A functioni definition specifies the name of new function and the sequence of statements that execute when the function is called.
 #
+#   1
+#
 #6 3pts) What are the 3 phases that every computer program has? What happens in
 #        each of them
 #	1:input - returns what the user typed as a string
 #	2:main - code will be executed even if the script was imported as a module with out this
 #	3:output - information provided by a computer program
+#
+#   wrong
 #
 #Part 2: Programming (25 points)
 #Write a program that asks the user for the areas of 3 circles.
@@ -47,7 +51,7 @@
 # Hint: Radius is the square root of the area divided by pi
 
 import math
-
+#2
 def main():
 	x = raw_input("Area of C1: ")
 	y = raw_input("Area of C2: ")
@@ -55,7 +59,8 @@ def main():
 	z2 = raw_input("Circle Diameter")
 	
 main()
-
+#1
+#1
 def diameter_of_C1(a):
 	return sqrt(x/math.pi)
 print diameter_of_C1(a)
