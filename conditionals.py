@@ -1,33 +1,39 @@
-import random
+#My script will let you make choices about what to buy.
 
-def numberChoice(minimumno, maximumno):
-	return random.randint(minimumno, maximumno)
-
-def guesserGuess(myChoice, playerGuess):
-	if myChoice < playerGuess:
-		dif = abs(playerGuess - myChoice)
-		return "Your guess is over by {}".format(dif)
-	if myChoice > playerGuess:
-		dif = abs(myChoice - playerGuess)
-		return "Your guess is under by {}".format(dif)
-
-def output(myChoice, playerGuess, incorrect):
-	if myChoice == playerGuess:
-		print """The target was {}
-Your guess was {}
-That is correct! Are you a mind(computer) reader?!""".format(myChoice, playerGuess)
+def shoes(choices):
+	if choices == "flip flops":
+		print "You chose flip flops and got kicked out of the shop! [^,^]"
+	elif choices == "tennis shoes":
+		print "What a nice choice! You get to work in the farm for 4 days starting from tomorrow! xD"
+	elif choices == "sandals":
+		print"Wisest choice ever :D"
 	else:
-		print """The target was {}
-Your guess was {}
-{}""".format(myChoice, playerGuess, incorrect)
+		print "You only have 3 choices man :("
+
+def free(gender):
+	if gender == "female":
+		print "I hope you're not lying cuz here, you get a super short mini skirt for free"
+	elif gender == "male":
+		print "I hope you're not lying cuz here, you get a boxer for free"
+	else:
+		print "You gotta be a male or a female... X( I mean you're not a god "
+
+def pants(kind):
+	if kind == "long denim pants":
+		print "I'm sorry man, you need to hike in those :P"
+	elif kind == "short pants":
+		print "Well, all I can say is GOOD LUCK cuz it's really cold out theree"
+	elif kind == "skirts":
+		print "I'll assume that you are a female ;)"
+	else:
+		print "NOOOO YOU ONLY HAVE THREE CHOICES!"
 
 def main():
-	minimumno = int(raw_input("What is the minimum number?: "))
-	maximumno = int(raw_input("What is the maximum number?: "))
-	print "I'm thinking of a number from {} to {}".format(minimumno, maximumno)
-	playerGuess = int(raw_input("What do you think it is?: "))
-	myChoice = int(numberChoice(minimumno, maximumno))
-	incorrect = guesserGuess(myChoice,playerGuess)
-	return output(myChoice, playerGuess,incorrect)
+	choices = raw_input("Choose one of these flip flops, tennis shoes, sandals: ")
+	choice = shoes(choices)
+	gender = raw_input("Are you a male or a female?: ")
+	femormale = free(gender)
+	kind = raw_input("Choose one of these long denim pants, short pants, skirts:")
+	undclothes = pants(kind)
 
 main()
