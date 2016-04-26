@@ -1,42 +1,42 @@
 #PART 1: Terminology
 #1) Give 3 examples of boolean expressions.
-#a) 3 == 3
-#b) 3!=2
-#c) 3<7
+#1a) 3 == 3
+#2b) 3!=2
+#3c) 3<7
 #
-#2) What does 'return' do?
+#4 2) What does 'return' do?
 # It spits out the result to the calling function.
 #
 #
 #
 #3) What are 2 ways indentation is important in python code?
-#a) The program will not work.
-#b) It shows when the code starts and ends.
+#5a) The program will not work.
+#6b) It shows when the code starts and ends. x
 #
 #
 
 #PART 2: Reading
 #Type the values for 12 of the 16 of the variables below.
 #
-#problem1_a) -36
-#problem1_b) square root of 3
-#problem1_c) 0
-#problem1_d) -5
+#7problem1_a) -36
+#8problem1_b) square root of 3
+#9problem1_c) 0
+#10problem1_d) -5
 #
-#problem2_a) True
-#problem2_b) False
-#problem2_c) False
-#problem2_d) False
+#11problem2_a) True
+#12problem2_b) False
+#13problem2_c) False
+#14problem2_d) False x
 #
-#problem3_a) 0.3
-#problem3_b) 0.5
-#problem3_c) 0.5
-#problem3_d) 0.5
+#15problem3_a) 0.3
+#16problem3_b) 0.5
+#17problem3_c) 0.5
+#18problem3_d) 0.5
 #
-#problem4_a) 7
-#problem4_b) 2
-#problem4_c) 0.125
-#problem4_d) 2.5
+#19problem4_a) 7
+#20problem4_b) 2
+#21problem4_c) 0.125
+#22problem4_d) 2.5
 #
 
 #PART 3: Programming
@@ -49,11 +49,11 @@
 
 def userchoice(num1, num2, num3):
 	if num1 > num2 and num1 > num3:
-		return "The largest number was {}".format(no1)
+		return "The largest number was {}".format(no1)#num1
 	if num2 > num1 and num2 > num3:
-		return "The largest number was {}".format(no2)
+		return "The largest number was {}".format(no2)#num2
 	if num3 > num1 and num3> num2:
-		return "The largest number was {}".format(no3)
+		return "The largest number was {}".format(no3)#num3
 	else:
 		print "You didn't follow directions"
 
@@ -66,7 +66,4 @@ def main():
 
 main()
 
-
-
-
-
+#27- 30, 32
