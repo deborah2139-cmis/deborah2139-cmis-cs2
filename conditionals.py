@@ -6,7 +6,7 @@ def shoes(choices):
 	elif choices == "tennis shoes":
 		print "What a nice choice! You get to work in the farm for 4 days starting from tomorrow! xD"
 	elif choices == "sandals":
-		print"Wisest choice ever :D"
+		print"Get $400 :D"
 	else:
 		print "You only have 3 choices man :("
 
@@ -14,15 +14,15 @@ def free(gender):
 	if gender == "female":
 		print "I hope you're not lying cuz here, you get a super short mini skirt for free"
 	elif gender == "male":
-		print "I hope you're not lying cuz here, you get a boxer for free"
+		print "I hope you're not lying cuz here, you get pants for males for free"
 	else:
-		print "You gotta be a male or a female... X( I mean you're not a god "
+		print "You gotta be a male or a female... X("
 
 def pants(kind):
 	if kind == "long denim pants":
 		print "I'm sorry man, you need to hike in those :P"
 	elif kind == "short pants":
-		print "Well, all I can say is GOOD LUCK cuz it's really cold out theree"
+		print "Wise choice :)"
 	elif kind == "skirts":
 		print "I'll assume that you are a female ;)"
 	else:
