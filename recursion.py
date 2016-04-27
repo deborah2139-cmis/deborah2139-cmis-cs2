@@ -1,3 +1,5 @@
+import numpy
+
 def countup(n):
 	if n >= 11:
 		print "Blastoff!"
@@ -27,9 +29,15 @@ def countdown_from_to(start, stop):
 		countdown(start-1)
 
 def adder():
-	pass
+	n = raw_input("n: ")
+	None == False
+	if n == False
+	
+	adder()
+
 
 def main():
+	adder()
 	countup(1)
 	countdown(10)
 	countup_from_to(20, 34)
