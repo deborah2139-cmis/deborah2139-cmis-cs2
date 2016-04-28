@@ -6,6 +6,7 @@ def countup(n):
 	else:
 		print n
 		countup(n+1)
+	pass
 
 def countdown(n):
 	if n <= 0:
@@ -13,6 +14,7 @@ def countdown(n):
 	else:
 		print n
 		countdown(n-1)
+	pass
 
 def countup_from_to(start, stop):
 	if start >= stop:
@@ -20,6 +22,7 @@ def countup_from_to(start, stop):
 	else:
 		print start
 		countup(start+1)
+	pass
 
 def countdown_from_to(start, stop):
 	if start <= stop:
@@ -27,12 +30,15 @@ def countdown_from_to(start, stop):
 	else:
 		print start
 		countdown(start-1)
+	pass
 
-def adder():
-	n = raw_input("n: ")
-	None == False
-	if n == False
-	
+def adder(continueadding):
+	n = float(raw_input("n: "))
+	if n == "":
+		print "The sum is {}".format(continueadding)
+	else n == 
+
+
 	adder()
 
 
