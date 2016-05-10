@@ -1,8 +1,8 @@
 #My script will let you make choices about what to buy. It will sometimes make you do some work like hiking unless you are lucky and you make a wise choice
 
 #At least 1 must return a boolean value and be used as a part of the flow control.
-#Use each of the logical operators at least once. 
-#Use random.random() at least once each in your script.
+#Use "not" "or" "and"
+#Use random.random()
 
 import random
 
@@ -45,6 +45,10 @@ def thechosenone(mynumb, chosennumb):
 		dif = abs(mynumb - chosennumb)
 		return "Your number is under by {}".format(dif)
 
+def hat(types):
+	snapback = True
+	
+
 def output(mynumb, chosennumb, wrong):
 	if mynumb == chosennumb:
 		print """That was right!!! The number was {}! You get 3 jackets in return!! :D""".format(mynumb)
@@ -65,5 +69,6 @@ def main():
 	mynumb = int(jacket(number1, number2))
 	wrong = thechosenone(mynumb, chosennumb)
 	return output(mynumb, chosennumb, wrong)
+	print "You need to choose one hat. If you choose the wrong one, there will be a penalty..."
 
 main()
