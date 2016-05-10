@@ -1,4 +1,9 @@
 #My script will let you make choices about what to buy. It will sometimes make you do some work like hiking unless you are lucky and you make a wise choice
+
+#At least 1 must return a boolean value and be used as a part of the flow control.
+#Use each of the logical operators at least once. 
+#Use random.random() at least once each in your script.
+
 import random
 
 def shoes(choices):
@@ -9,12 +14,12 @@ def shoes(choices):
 	elif choices == "sandals":
 		print"Get $400 :D"
 	else:
-		print "You only have 3 choices :( Bye"
+		print "You only have 3 choices :( Bye :("
 
 def free(gender):
 	if gender == "female":
 		print "You get pants for males for free"
-	elif gender == "male":
+	elif gender != "female":
 		print "You get a super short mini skirt for free"
 	else:
 		print "You gotta be a male or a female... X( Bye"
@@ -32,6 +37,20 @@ def pants(kind):
 def jacket(number1, number2):
 	return random.randint(number1, number2)
 
+def thechosenone(mynumb, chosennumb):
+	if mynumb < chosennumb:
+		dif = abs(chosennumb - mynumb)
+		return "Your number is over by {}".format(dif)
+	if mynumb > chosennumb:
+		dif = abs(mynumb - chosennumb)
+		return "Your number is under by {}".format(dif)
+
+def output(mynumb, chosennumb, wrong):
+	if mynumb == chosennumb:
+		print """That was right!!! The number was {}! You get 3 jackets in return!! :D""".format(mynumb)
+	else:
+		print """Your guess, {}, was not right!! The number was {}. I'm sorry, but there's no second chance :( {}""".format(chosennumb, mynumb, wrong)
+	 
 def main():
 	choices = raw_input("Choose one of these: flip flops, tennis shoes, sandals: ")
 	choice = shoes(choices)
@@ -39,9 +58,12 @@ def main():
 	femormale = free(gender)
 	kind = raw_input("Choose one of these long denim pants, short pants, skirts: ")
 	undclothes = pants(kind)
-	number1 = raw_input("Type any number that is not negative: ")
-	number2 = raw_input("Type another number that is not negative; ")
-	return jacket(number)
-	numbjacket = jacket(number)
+	number1 = int(raw_input("Type any number: "))
+	number2 = int(raw_input("Type another number: "))
+	print "I'm thinking of a number from {} to {}. If you guess the number right, you get 3 different jackets.".format(number1, number2)
+	chosennumb = int(raw_input("Take a guess!!: "))
+	mynumb = int(jacket(number1, number2))
+	wrong = thechosenone(mynumb, chosennumb)
+	return output(mynumb, chosennumb, wrong)
 
 main()
