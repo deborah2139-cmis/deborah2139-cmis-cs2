@@ -42,6 +42,14 @@ def pants(kind):
 	else:
 		print "NOOOO YOU ONLY HAVE THREE CHOICES! BYEE!"
 
+#def whathat(whattype):
+	#if whattype == True:
+	#	msg = "You are very lucky!! You get $1000"
+	#else:
+	#	msg = "Wrong!! I'm sorry but there's no prize for a loser :("
+	#return """
+#{}""".format(msg)
+
 def jacket(number1, number2):
 	return random.randint(number1, number2)
 
@@ -49,33 +57,18 @@ def thechosenone(mynumb, chosennumb):
 	if mynumb < chosennumb:
 		dif = abs(chosennumb - mynumb)
 		return "Your number is over by {}".format(dif)
-
 	if mynumb > chosennumb:
 		dif = abs(mynumb - chosennumb)
 		return "Your number is under by {}".format(dif)
-
-def hat(types):
-	if types == "cowboyhat":
-		return True
-
-	else:
-		return False
-
-def whathat(types):
-	if types == True:
-		msg = "You are very lucky!! You get $1000"
-	else:
-		msg = "Wrong!! I'm sorry but there's no prize for a loser :("
 
 def output(mynumb, chosennumb, wrong):
 	if mynumb == chosennumb:
 		print """That was right!!! The number was {}! You get 3 jackets in return!! :D""".format(mynumb)
 	elif chosennumb > mynumb:
 		return """NOOO!!!! YOUR MAXIMUM NUMBER IS {}!!!""".format(chosennumb)
-
 	else:
 		print """Your guess, {}, was not right!! The number was {}. I'm sorry, but there's no second chance :( {}""".format(chosennumb, mynumb, wrong)
-	 
+
 def main():
 	choices = raw_input("Choose one of these: flip flops, tennis shoes, sandals: ")
 	choice = shoes(choices)
@@ -83,16 +76,14 @@ def main():
 	femormale = free(gender)
 	kind = raw_input("Choose one of these long denim pants, short pants, skirts: ")
 	undclothes = pants(kind)
+	#whattype = raw_input("You need to choose one hat! YOU NEED TO CHOOSE THE RIGHT ONE: snapback, beanie, or cowboyhat: ")
+	#whathatt = whathat(whattype)
 	number1 = int(raw_input("Type any number: "))
 	number2 = int(raw_input("Type another number: "))
 	print "I'm thinking of a number from {} to {}. If you guess the number right, you get 3 different jackets.".format(number1, number2)
-	types = raw_input("You need to choose one hat! YOU NEED TO CHOOSE THE RIGHT ONE: snapback, beanie, or cowboyhat: ")
-	hatt = hat(types)
-	whathatt = whathat(types)
-	chosennumb = (raw_input("Take a guess!!: ")
+	chosennumb = int(raw_input("Take a guess!!: "))
 	mynumb = int(jacket(number1, number2))
 	wrong = thechosenone(mynumb, chosennumb)
 	return output(mynumb, chosennumb, wrong)
-	
 
 main()
