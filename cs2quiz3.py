@@ -13,11 +13,11 @@
 #
 # 4) How do we put data into a function call?
 #Put in an argument
-#wrong
+#corr
 # 
 # 5) How do we get data out of a function call?
 #Base case
-#wrong
+#wrong (return)
 #
 
 #Section 2: Reading
@@ -30,7 +30,7 @@
 
 #b1 = 2			check
 #b2 = 2			check
-#b3 = 0, 5
+#b3 = 0
 
 #c1 = -1
 #c2 = 4			check
@@ -50,7 +50,6 @@
 #It is NOT NECESSARY to print out a running total with each user input.
 
 
-#2, 2, 1
 import math
 
 def enter(number):
