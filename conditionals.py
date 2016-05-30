@@ -1,6 +1,5 @@
 #My script will let you make choices about what to buy. It will sometimes make you do some work like hiking unless you are lucky and you make a wise choice
 
-
 import random
 
 def shoes(choices):
